@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style></style>
+  </head>
+  <body>
+    <h1>Escola Virtual</h1>
+    <h2>Formulário de Pré-Matrícula</h2>
+    <hr />
+    <form action="" id="formulary">
+      <fieldset form="formulary" name="userData">
+        <legend>Dados Pessoais</legend>
+        <div>
+          <label for="userName">Nome do Aluno</label>
+          <input
+            type="text"
+            name="userName"
+            id="userName"
+            required
+            form="formulary"
+            placeholder="Nome Completo"
+          />
+        </div>
+
+        <div>
+          <label for="userYear">Nascimento: </label>
+          <input
+            id="userYear"
+            type="date"
+            value="2021-12-16"
+            form="Formulary"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="userMother">Nome da Mãe</label>
+          <input
+            type="text"
+            name="userMother"
+            id="userMother"
+            required
+            placeholder="Nome Completo da Mãe"
+            form="formulary"
+          />
+        </div>
+
+        <div>
+          <label for="userFather">Nome do Pai</label>
+          <input
+            type="text"
+            name="userFatherr"
+            id="userFather"
+            required
+            placeholder="Nome Completo do Pai"
+            form="formulary"
+          />
+        </div>
+
+        <div>
+          <label for="ddd">DDD</label>
+          <input
+            type="text"
+            name="dddUser"
+            id="ddd"
+            pattern="[0-9]{2}"
+            title="Digite os 2 números do DDD: 99"
+            placeholder="DDD"
+            size="3"
+            required
+            form="formulary"
+          />
+          <label for="userPhone">Telefene: </label>
+          <input
+            type="tel"
+            name="userPhone"
+            id="userPhone"
+            pattern="[0-9]{5}-[0-9]{4}"
+            placeholder="99999-9999"
+            title="Digite um número: 999999999"
+            required
+            form="formulary"
+          />
+        </div>
+
+        <div>
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            name="emailUser"
+            id="email"
+            placeholder="seu-email@gmail.com"
+            required
+            form="formulary"
+            autocomplete="email"
+          />
+        </div>
+      </fieldset>
+
+      <fieldset form="formulary" name="InfoRegister">
+        <legend>Informações de Matrícula</legend>
+        <div>
+          <label for="schoolLevel">Nível Escolar</label>
+          <select name="schoolLevel" id="schoolLevel">
+            <optgroup label="Nível Escolar">
+              <option value="ensino-fundamental1">Ensino Fundamental 1</option>
+              <option value="ensino-fundamental2">Ensino Fundamental 2</option>
+              <option value="ensino-medio">Ensino Médio</option>
+              <option value="pre-vestibulando">Terceiro Ano</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div>
+          <label for="morning">Manhã</label>
+          <input type="radio" name="morning" id="morning" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
